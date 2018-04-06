@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView 
+        android:id="@+id/bustitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingLeft="3sp"
+        android:textSize="22sp"
+        />
+    <TextView 
+        android:id="@+id/businfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bustitle"
+        android:padding="3sp"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="#808080"
+        />
+    <ListView 
+        android:id="@+id/buslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/businfo"
+        ></ListView>
+    <TextView 
+        android:id="@+id/buslinenote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c0c0c0"
+        android:text="公交信息搜索结果"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="22sp" />
+</RelativeLayout>

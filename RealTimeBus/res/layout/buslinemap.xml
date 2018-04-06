@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+   <com.baidu.mapapi.map.MapView
+       android:id="@+id/bmapView"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:clickable="true"/>
+    <Button 
+        android:id="@+id/showmovingbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="开启实时公交"
+        />
+
+    <TextView 
+        android:id="@+id/current_remind_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showmovingbt"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5sp"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:text="当前提醒站点\n无"
+        />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:layout_marginBottom="10dip">
+
+            <Button
+                android:id="@+id/pre"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/pre_"
+                android:onClick="nodeClick" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/next_"
+                android:onClick="nodeClick" />
+        </LinearLayout>
+ 
+    </RelativeLayout>
