@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3sp"
+    android:focusable="true" 
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.example.poisearch.MainActivity" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="城市:"
+        />
+    <EditText 
+        android:id="@+id/poicity"
+        android:layout_width="77sp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text=""
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地点:"
+        />    
+    <AutoCompleteTextView
+        android:id="@+id/searchkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_weight="7"
+        android:text="" />
+    <Button 
+        android:id="@+id/poisearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="searchButtonProcess"
+        android:textSize="16sp"
+        android:text="查询"
+        />
+    </LinearLayout>
+    <include 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/map_or_plan"
+        />
+    <FrameLayout 
+        android:id="@+id/poiplanframe"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ></FrameLayout>
+
+
+</LinearLayout>

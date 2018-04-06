@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20sp"
+    android:paddingRight="10sp"
+    android:paddingBottom="20sp"
+    tools:context="com.example.poisearch.MainActivity" >
+    <ImageView 
+        android:id="@+id/walkwayimage"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/walkimage"/>
+    <TextView 
+        android:id="@+id/walkroute_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/walkwayimage"
+        android:textSize="20sp"
+        />
+</RelativeLayout>
